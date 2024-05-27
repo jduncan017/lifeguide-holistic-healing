@@ -22,6 +22,9 @@ export default {
         heroOrange: "rgba(253, 186, 116, 0.7)", // 80% opacity orange
         heroStone: "rgba(250, 250, 250, 0.7)", // 80% opacity stone
       },
+      boxShadow: {
+        themeShadow: "0 4px 12px rgba(0, 0, 0, 0.8)",
+      },
     },
   },
   plugins: [],

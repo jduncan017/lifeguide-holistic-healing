@@ -1,13 +1,17 @@
 Proprietary License
 
-Copyright (c) [Year] [Your Client's Name/Business]
+Copyright (c) 2024 LifeGuide Holistic Healing
 
 All rights reserved.
 
-Permission is hereby granted to [Your Client's Name/Business] to use, modify, and distribute this software.
+Permission is hereby granted to LifeGuide Holistic Healing to use, modify, and distribute this software.
 
-Unauthorized use, modification, or distribution of this software, or any portion thereof, is strictly prohibited without the express written permission of [Your Client's Name/Business].
+Unauthorized use, modification, or distribution of this software, or any portion thereof, 
+is strictly prohibited without the express written permission of LifeGuide Holistic Healing.
 
-For permissions, please contact [Your Contact Information].
+For permissions, please contact my at emailjoshduncan@gmail.com
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
+THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
+TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

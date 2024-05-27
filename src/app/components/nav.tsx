@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./ui-components/button";
 
 const NavBar = () => {
   return (
-    <nav className="NavBar bg-neutral absolute z-10 w-full font-sans shadow-md">
+    <nav className="NavBar bg-neutral absolute z-10 w-full max-w-[1728px] font-sans shadow-md">
       <div className="Container mx-auto flex h-[74px] items-center justify-between px-5">
         <Link
           href="/"
@@ -11,7 +12,7 @@ const NavBar = () => {
         >
           <Image
             src="/nav-logo.png"
-            alt="LifeGuide Logo"
+            alt="LifeGuide Holistic Healing Logo"
             width={190}
             height={50}
           />
@@ -33,9 +34,7 @@ const NavBar = () => {
             </p>
           </Link>
           <Link href="/contact">
-            <button className="ContactButton bg-primary hover:bg-primaryDark rounded-sm px-4 py-2 uppercase text-white">
-              Contact
-            </button>
+            <Button colorFill={true} rounded={false} text="Contact" />
           </Link>
         </div>
       </div>

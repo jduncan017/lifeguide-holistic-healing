@@ -1,21 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./ui-components/button";
 
 const HeroSection = () => {
   return (
     <div className="HeroSection relative min-h-screen">
-      <div className="BackgroundImage absolute inset-0">
+      <div className="ImageContainer shadow-themeShadow absolute inset-0 h-dvh overflow-hidden">
         <Image
+          className="BackgroundImage h-full w-full"
           src="/hero-background.png"
           alt="Background"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
+          width={1728}
+          height={1138}
+          priority
         />
       </div>
-      <div className="TitleSection from-heroPink via-heroOrange to-heroStone m-auto h-fit w-[705px] rounded-bl-2xl rounded-br-2xl bg-gradient-to-b text-center shadow backdrop-blur-md">
+      <div className="TitleSection shadow-themeShadow from-heroPink via-heroOrange to-heroStone m-auto h-fit w-[705px] rounded-bl-2xl rounded-br-2xl bg-gradient-to-b text-center backdrop-blur-md">
         <Image
-          className="Logo mx-auto pt-16"
+          className="Logo mx-auto w-auto pt-16"
           src="/logo-with-glow.png"
           alt="LifeGuide Logo"
           width={595}
@@ -26,9 +28,13 @@ const HeroSection = () => {
           subconscious stress.
         </p>
         <Link href="/about">
-          <button className="CTA bg-primary hover:bg-primaryDark mb-20 mt-10 h-[52px] w-52 rounded-full font-sans uppercase text-white">
-            Learn More
-          </button>
+          <Button
+            rounded={true}
+            text="Learn More"
+            colorFill={false}
+            addClasses="mb-20 mt-10"
+            size="md"
+          />
         </Link>
       </div>
     </div>
