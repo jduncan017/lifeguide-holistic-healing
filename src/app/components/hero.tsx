@@ -19,7 +19,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
           priority
         />
       </div>
-      <div className="TitleSection z-[5] h-fit max-w-[705px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-4 text-center shadow-themeShadow backdrop-blur-md sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
+      <div className="TitleSection z-[5] h-fit max-w-[705px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-4 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
         <Image
           className="Logo mx-auto w-auto"
           src="/logo-with-glow.png"

@@ -51,7 +51,7 @@ const NavBar = () => {
 
   return (
     <nav className="NavContainer">
-      <div className="NavBar fixed z-10 hidden w-full max-w-[1728px] overflow-hidden bg-blurWhite font-sans shadow-md backdrop-blur-lg sm:absolute sm:block">
+      <div className="NavBar fixed z-10 hidden w-full max-w-[1728px] overflow-hidden bg-blurWhite font-sans shadow-md backdrop-blur-lg backdrop-filter sm:absolute sm:block">
         <div className="Container mx-auto flex h-[74px] items-center justify-between px-3 sm:px-5">
           <Link
             href="/"
@@ -70,7 +70,7 @@ const NavBar = () => {
       {/* Mobile Menu */}
       <div
         className={`
-          ${mobileActive ? "h-[360px] rounded-xl" : "h-[74px]"} ${"MobileNav fixed z-10 flex w-full flex-col overflow-hidden bg-blurWhite px-6 py-3 font-sans shadow-md backdrop-blur-lg transition-all duration-500 sm:hidden"}
+          ${mobileActive ? "h-[360px] rounded-xl" : "h-[74px]"} ${"MobileNav fixed z-10 flex w-full flex-col overflow-hidden bg-blurWhite px-6 py-3 font-sans shadow-md backdrop-blur-lg backdrop-filter transition-all duration-500 sm:hidden"}
         `}
       >
         <div className="NavBar flex w-full items-center justify-between">
