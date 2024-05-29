@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="Page m-auto max-w-[1728px]">
       <HeroSection scrollToRef={() => scrollToRef(heroRef)} />
-      <div className="PageContent flex h-fit flex-col gap-20 p-2 sm:px-10 sm:py-20 xl:px-[144px]">
+      <div className="PageContent flex h-fit flex-col gap-20 p-4 sm:px-10 sm:py-20 xl:px-[144px]">
         <FinalCTA ref={heroRef} />
       </div>
     </div>

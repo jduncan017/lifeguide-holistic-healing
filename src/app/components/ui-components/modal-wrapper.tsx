@@ -18,14 +18,14 @@ const ModalWrapper: FC<ModalWrapperProps> = ({ children }) => {
 
   return (
     <div
-      className="modal__backdrop bg-blurWhite fixed inset-0 z-20 flex h-dvh justify-center backdrop-blur-sm"
+      className="modal__backdrop fixed inset-0 z-20 flex h-dvh justify-center bg-blurWhite backdrop-blur-sm"
       onClick={hideModal}
     >
       <motion.div
         animate={{ scale: 1 }}
         initial={{ scale: 0 }}
         transition={{ duration: 0.2 }}
-        className="modal__content m-auto h-fit w-fit rounded-2xl bg-gradient-to-b from-neutralDark to-primaryLight px-6 py-2 text-center shadow-themeShadow backdrop-blur-md"
+        className="modal__content relative m-auto h-fit w-fit rounded-2xl bg-gradient-to-b from-neutralDark to-primaryLight px-6 py-2 text-center shadow-themeShadow backdrop-blur-md"
         onClick={handleModalContentClick}
       >
         <button

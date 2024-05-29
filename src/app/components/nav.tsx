@@ -1,53 +1,93 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./ui-components/button";
 import { useModal } from "~/contexts/ModalContext";
 import ContactModal from "~/app/components/contact-modal";
 import ConstructionModal from "./ui-components/construction-modal";
+import HamburgerIcon from "./ui-components/hamburger-menu/HamburgerIcon";
 
 const NavBar = () => {
+  const [mobileActive, setMobileActive] = useState(false);
+
   const { showModal } = useModal();
 
+  function toggleMenu() {
+    setMobileActive(!mobileActive);
+  }
+
+  const links = [
+    { text: "About Us" },
+    { text: "Services" },
+    { text: "Articles" },
+  ];
+
+  const renderMenu = () => {
+    return (
+      <div className="LinksContainer flex flex-col gap-6 px-16 pt-10 text-lg font-medium sm:flex-row sm:items-center sm:gap-4 sm:p-0 md:gap-6">
+        {links.map((link, index) => (
+          <button key={index} onClick={() => showModal(<ConstructionModal />)}>
+            <p className="AboutText text-2xl uppercase text-primaryDark transition-all duration-300 hover:text-gray-700 hover:underline sm:text-sm md:text-base">
+              {link.text}
+            </p>
+          </button>
+        ))}
+
+        {/* Contact Button */}
+        <Button
+          colorFill={true}
+          rounded={mobileActive}
+          text="CONTACT"
+          onSubmit={() => {
+            setMobileActive(false);
+            showModal(<ContactModal />);
+          }}
+          size="md"
+        />
+      </div>
+    );
+  };
+
   return (
-    <nav className="NavBar fixed z-10 w-full max-w-[1728px] bg-blurWhite  font-sans shadow-md backdrop-blur-lg sm:absolute">
-      <div className="Container mx-auto flex h-[74px] items-center justify-between px-3 sm:px-5">
-        <Link
-          href="/"
-          className="transition-all duration-300 hover:scale-105 hover:contrast-125"
-        >
-          <div className="ImageWrapper rounded-md bg-white bg-opacity-50 px-4 py-2">
+    <nav className="NavContainer">
+      <div className="NavBar fixed z-10 hidden w-full max-w-[1728px] overflow-hidden bg-blurWhite font-sans shadow-md backdrop-blur-lg sm:absolute sm:block">
+        <div className="Container mx-auto flex h-[74px] items-center justify-between px-3 sm:px-5">
+          <Link
+            href="/"
+            className="transition-all duration-300 hover:scale-105 hover:contrast-125"
+          >
             <Image
-              src="/nav-logo.png"
+              src="/logo-wide-black.png"
               alt="LifeGuide Holistic Healing Logo"
               width={190}
               height={50}
             />
-          </div>
-        </Link>
-        <div className="LinksContainer hidden items-center gap-6 text-lg font-medium sm:flex">
-          <button onClick={() => showModal(<ConstructionModal />)}>
-            <p className="AboutText text-sm uppercase text-primaryDark transition-all duration-300 hover:text-gray-700 hover:underline md:text-base">
-              About Us
-            </p>
-          </button>
-          <button onClick={() => showModal(<ConstructionModal />)}>
-            <p className="ServicesText text-sm uppercase text-primaryDark transition-all duration-300 hover:text-gray-700 hover:underline md:text-base">
-              Services
-            </p>
-          </button>
-          <button onClick={() => showModal(<ConstructionModal />)}>
-            <p className="ArticlesText text-sm uppercase text-primaryDark transition-all duration-300 hover:text-gray-700 hover:underline md:text-base">
-              Articles
-            </p>
-          </button>
-          <Button
-            colorFill={true}
-            rounded={false}
-            text="CONTACT"
-            onSubmit={() => showModal(<ContactModal />)}
-          />
+          </Link>
+          {renderMenu()}
         </div>
+      </div>
+      {/* Mobile Menu */}
+      <div
+        className={`
+          ${mobileActive ? "h-[360px] rounded-xl" : "h-[74px]"} ${"MobileNav fixed z-10 flex w-full flex-col overflow-hidden bg-blurWhite px-6 py-3 font-sans shadow-md backdrop-blur-lg transition-all duration-500 sm:hidden"}
+        `}
+      >
+        <div className="NavBar flex w-full items-center justify-between">
+          <Link
+            href="/"
+            className="transition-all duration-300 hover:scale-105 hover:contrast-125"
+          >
+            <Image
+              src="/logo-wide-black.png"
+              alt="LifeGuide Holistic Healing Logo"
+              width={190}
+              height={50}
+            />
+          </Link>
+          <HamburgerIcon onToggleMenu={toggleMenu} menuOpen={mobileActive} />
+        </div>
+        {mobileActive && renderMenu()}
       </div>
     </nav>
   );

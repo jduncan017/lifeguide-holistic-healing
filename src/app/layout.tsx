@@ -5,7 +5,12 @@ import NavBar from "./components/nav";
 import Footer from "./components/footer";
 import { ModalProvider } from "~/contexts/ModalContext";
 
+if (!process.env.NEXT_PUBLIC_BASE_URL) {
+  throw new Error("NEXT_PUBLIC_BASE_URL is not defined");
+}
+
 export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   title: "LifeGuide Holistic Healing",
   keywords:
     "brainspotting, holistic healing, holistic wellness, energy medicine, intuitive healing, integrative medicine, life coaching, transitions, grief, transformation, transitions",
