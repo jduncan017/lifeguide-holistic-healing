@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { TRPCReactProvider } from "~/trpc/react";
 import NavBar from "./components/nav";
 import Footer from "./components/footer";
+import { ModalProvider } from "~/contexts/ModalContext";
 
 export const metadata = {
   title: "Create T3 App",
@@ -17,11 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="Body from-neutralLight to-neutralDark bg-gradient-to-b">
+      <body className="Body h-fit overflow-x-hidden bg-gradient-to-b from-primary via-neutralLight to-neutralDark">
         <TRPCReactProvider>
-          <NavBar />
-          {children}
-          <Footer />
+          <ModalProvider>
+            <NavBar />
+            {children}
+            <Footer />
+          </ModalProvider>
         </TRPCReactProvider>
       </body>
     </html>

@@ -4,148 +4,99 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="Footer inline-flex h-fit w-full flex-col items-start justify-start gap-12 px-16 pb-6 pt-20">
-      <div className="Content inline-flex h-60 items-start justify-start gap-32 self-stretch">
-        <div className="Newsletter inline-flex w-96 flex-col items-start justify-start gap-6">
+    <div className="Footer flex h-fit w-full flex-col items-start justify-start gap-12 px-4 pb-6 pt-10 md:px-16">
+      <div className="Content flex h-fit w-full flex-col items-center justify-start gap-8 border-t border-gray-400 pt-8 md:flex-row md:items-start md:gap-24">
+        <div className="Newsletter flex w-full flex-col items-center justify-start gap-6 md:items-start xl:w-1/2">
           <Link
             href="/"
-            className="transition-all duration-300 hover:scale-105 hover:contrast-125"
+            className="ImageLink self-center transition-all duration-300 hover:scale-105 hover:contrast-125"
           >
             <Image
+              className="h-auto w-full"
               src="/nav-logo.png"
               alt="LifeGuide Holistic Healing Logo"
-              width={190}
-              height={50}
+              width={380}
+              height={100}
             />
           </Link>
-          <div className="JoinOurNewsletterToStayUpToDateOnFeaturesAndReleases font-['Playfair Display'] self-stretch text-base font-normal leading-normal text-black">
-            Join our newsletter to receive updates on our latest features and
-            releases.
-          </div>
-          <div className="Actions flex h-24 flex-col items-start justify-start gap-4 self-stretch">
-            <div className="Form inline-flex items-start justify-start gap-4 self-stretch">
-              <div className="TypeDefault flex h-12 shrink grow basis-0 items-center justify-start gap-2 border border-black bg-stone-50 p-3">
-                <div className="Placeholder shrink grow basis-0 font-['Roboto'] text-base font-normal leading-normal text-stone-500">
-                  Your Email
-                </div>
-              </div>
-              <div className="StyleSecondarySmallFalseDarkModeFalseIconPositionNoIcon flex h-12 items-center justify-center gap-2 bg-pink-700 px-6 py-3">
-                <div className="Button font-['Roboto'] text-base font-normal leading-normal text-stone-50">
-                  Subscribe
-                </div>
-              </div>
-            </div>
-            <div className="BySubscribingYouAgreeToWithOurPrivacyPolicyAndProvideConsentToReceiveUpdatesFromOurCompany self-stretch font-['Roboto'] text-xs font-normal leading-none text-black">
-              By subscribing, you agree to our Privacy Policy and consent to
-              receive updates from our company.
-            </div>
-          </div>
         </div>
-        <div className="Links flex h-56 shrink grow basis-0 items-start justify-start gap-10">
-          <div className="Column inline-flex shrink grow basis-0 flex-col items-start justify-start gap-4">
-            <div className="ColumnOne self-stretch font-['Roboto'] text-base font-semibold leading-normal text-black">
-              About Us
-            </div>
-            <div className="FooterLinks flex h-48 flex-col items-start justify-start self-stretch">
-              <div className="Link inline-flex items-start justify-start self-stretch py-2">
-                <div className="LinkOne font-['Playfair Display'] shrink grow basis-0 text-sm font-normal leading-tight text-black">
+        <div className="Links flex h-56 w-full items-start justify-evenly gap-12">
+          <div className="Column flex flex-col items-start justify-start gap-4">
+            <h3 className="ColumnOne w-full font-sans text-base font-semibold uppercase leading-normal text-gray-700">
+              Sitemap
+            </h3>
+            <div className="FooterLinks flex h-48 w-fit flex-col items-start justify-start">
+              <div className="Link flex w-fit items-start justify-start py-2">
+                <div className="LinkOne font-normal leading-tight text-gray-600">
                   Services
                 </div>
               </div>
-              <div className="Link inline-flex items-start justify-start self-stretch py-2">
-                <div className="LinkTwo font-['Playfair Display'] shrink grow basis-0 text-sm font-normal leading-tight text-black">
+              <div className="Link flex w-fit items-start justify-start py-2">
+                <div className="LinkTwo font-normal leading-tight text-gray-600">
                   Articles
                 </div>
               </div>
-              <div className="Link inline-flex items-start justify-start self-stretch py-2">
-                <div className="LinkThree font-['Playfair Display'] shrink grow basis-0 text-sm font-normal leading-tight text-black">
+              <div className="Link flex w-fit items-start justify-start py-2">
+                <div className="LinkThree font-normal leading-tight text-gray-600">
                   Contact
                 </div>
               </div>
-              <div className="Link inline-flex items-start justify-start self-stretch py-2">
-                <div className="LinkFour font-['Playfair Display'] w-56 text-sm font-normal leading-tight text-black">
+              <div className="Link flex w-fit items-start justify-start py-2">
+                <div className="LinkFour w-fit font-normal leading-tight text-gray-600">
                   FAQ
                 </div>
               </div>
-              <div className="Link inline-flex items-start justify-start self-stretch py-2">
-                <div className="LinkFive font-['Playfair Display'] shrink grow basis-0 text-sm font-normal leading-tight text-black">
+              <div className="Link flex w-fit items-start justify-start py-2">
+                <div className="LinkFive font-normal leading-tight text-gray-600">
                   Testimonials
                 </div>
               </div>
             </div>
           </div>
-          <div className="Column inline-flex shrink grow basis-0 flex-col items-start justify-start gap-4">
-            <div className="ColumnTwo self-stretch font-['Roboto'] text-base font-semibold leading-normal text-black">
+          <div className="Column flex flex-col items-start justify-start gap-4">
+            <h3 className="ColumnTwo w-full font-sans text-base font-semibold uppercase leading-normal text-gray-700">
               Services
-            </div>
-            <div className="FooterLinks flex h-28 flex-col items-start justify-start self-stretch">
-              <div className="Link inline-flex items-start justify-start self-stretch py-2">
-                <div className="LinkSix font-['Playfair Display'] shrink grow basis-0 text-sm font-normal leading-tight text-black">
+            </h3>
+            <div className="FooterLinks flex h-28 w-full flex-col items-start justify-start">
+              <div className="Link flex w-full items-start justify-start py-2">
+                <div className="LinkSix font-normal leading-tight text-gray-600">
                   Energy Medicine
                 </div>
               </div>
-              <div className="Link inline-flex items-start justify-start self-stretch py-2">
-                <div className="LinkSeven font-['Playfair Display'] shrink grow basis-0 text-sm font-normal leading-tight text-black">
+              <div className="Link flex w-full items-start justify-start py-2">
+                <div className="LinkSeven font-normal leading-tight text-gray-600">
                   Life Guidance
                 </div>
               </div>
-              <div className="Link inline-flex items-start justify-start self-stretch py-2">
-                <div className="LinkEight font-['Playfair Display'] shrink grow basis-0 text-sm font-normal leading-tight text-black">
+              <div className="Link flex w-full items-start justify-start py-2">
+                <div className="LinkEight font-normal leading-tight text-gray-600">
                   Benefits
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="Column inline-flex shrink grow basis-0 flex-col items-start justify-start gap-4">
-            <div className="FollowUs self-stretch font-['Roboto'] text-base font-semibold leading-normal text-black">
-              Follow Us
-            </div>
-            <div className="SocialLinks flex h-40 flex-col items-start justify-start self-stretch">
-              <div className="Link inline-flex items-center justify-start gap-3 self-stretch py-2">
-                <div className="IconFacebook relative h-6 w-6" />
-                <div className="Facebook font-['Playfair Display'] text-sm font-normal leading-tight text-black">
-                  Quote
-                </div>
-              </div>
-              <div className="Link inline-flex items-center justify-start gap-3 self-stretch py-2">
-                <div className="IconInstagram relative h-6 w-6" />
-                <div className="Instagram font-['Playfair Display'] text-sm font-normal leading-tight text-black">
-                  Quote
-                </div>
-              </div>
-              <div className="Link inline-flex items-center justify-start gap-3 self-stretch py-2">
-                <div className="IconX relative h-6 w-6" />
-                <div className="X font-['Playfair Display'] text-sm font-normal leading-tight text-black">
-                  Quote
-                </div>
-              </div>
-              <div className="Link inline-flex items-center justify-start gap-3 self-stretch py-2">
-                <div className="IconLinkedin relative h-6 w-6" />
-                <div className="Linkedin font-['Playfair Display'] text-sm font-normal leading-tight text-black">
-                  Quote
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="Credits flex h-14 flex-col items-start justify-start gap-8 self-stretch">
-        <div className="Divider h-px self-stretch border border-black bg-black" />
-        <div className="Row inline-flex items-start justify-between self-stretch">
-          <div className="2023RelumeAllRightsReserved font-['Playfair Display'] text-sm font-normal leading-tight text-black">
-            © 2023 LifeGuide Holistic Healing. All rights reserved.
-          </div>
-          <div className="FooterLinks flex items-start justify-start gap-6">
-            <div className="PrivacyPolicy font-['Playfair Display'] text-sm font-normal leading-tight text-black underline">
+      <div className="Credits flex h-fit w-full flex-col items-center justify-between gap-2 border-t-2 border-gray-700 pt-4 md:items-start lg:flex-row">
+        <div className="2023RelumeAllRightsReserved font-normal leading-tight text-gray-600">
+          © 2023 LifeGuide Holistic Healing. All rights reserved.
+        </div>
+        <div className="FooterLinks flex items-start justify-start gap-6">
+          <Link href="/privacy">
+            <div className="PrivacyPolicy font-normal leading-tight text-gray-600 underline">
               Privacy Policy
             </div>
-            <div className="TermsOfService font-['Playfair Display'] text-sm font-normal leading-tight text-black underline">
+          </Link>
+          <Link href="/privacy">
+            <div className="TermsOfService font-normal leading-tight text-gray-600 underline">
               Terms and Conditions
             </div>
-            <div className="CookiesSettings font-['Playfair Display'] text-sm font-normal leading-tight text-black underline">
+          </Link>
+          <Link href="/privacy">
+            <div className="CookiesSettings font-normal leading-tight text-gray-600 underline">
               Cookie Policy
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

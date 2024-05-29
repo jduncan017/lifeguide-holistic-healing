@@ -9,7 +9,6 @@ export default {
         serif: ["Playfair", "serif"],
       },
       colors: {
-        offBlack: "#00101F",
         neutral: "#FFFBF4",
         neutralLight: "#FFFBF4",
         neutralDark: "#FFF1DD",
@@ -18,9 +17,11 @@ export default {
         primaryLight: "#F8B999",
         secondaryBlue: "#406A91",
         tertiaryYellow: "#FCC686",
-        heroPink: "rgba(252, 165, 165, 0.7)", // 80% opacity red
-        heroOrange: "rgba(253, 186, 116, 0.7)", // 80% opacity orange
-        heroStone: "rgba(250, 250, 250, 0.7)", // 80% opacity stone
+        heroPink: "rgba(252, 165, 165, 0.75)",
+        heroOrange: "rgba(253, 186, 116, 0.75)",
+        heroStone: "rgba(250, 250, 250, 0.75)",
+        blurWhite: "rgba(255, 255, 255, 0.5)",
+        blurBlack: "rgba(0, 0, 0, 0.4)",
       },
       boxShadow: {
         themeShadow: "0 4px 12px rgba(0, 0, 0, 0.8)",

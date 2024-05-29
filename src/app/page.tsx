@@ -1,16 +1,26 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import HeroSection from "./components/hero";
 import FinalCTA from "./components/final-cta";
 
-const home = () => {
+const Home = () => {
+  const heroRef = useRef(null);
+
+  function scrollToRef(ref: React.RefObject<HTMLDivElement>) {
+    console.log("ref!]");
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <div className="Page m-auto max-w-[1728px]">
-      <HeroSection />
-      <div className="PageContent px-[144px]">
-        <FinalCTA />
+      <HeroSection scrollToRef={() => scrollToRef(heroRef)} />
+      <div className="PageContent flex h-fit flex-col gap-20 p-2 sm:px-10 sm:py-20 xl:px-[144px]">
+        <FinalCTA ref={heroRef} />
       </div>
     </div>
   );
 };
 
-export default home;
+export default Home;
