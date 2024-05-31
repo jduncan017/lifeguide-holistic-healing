@@ -5,14 +5,14 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="Footer flex h-fit w-full flex-col items-start justify-start gap-4 px-4 pb-6 pt-0 sm:gap-12 sm:pt-10 md:px-16">
-      <div className="Content flex h-fit w-full flex-col items-center justify-start gap-8 border-t border-gray-400 px-4 pt-8 md:flex-row md:items-start md:gap-24">
+      <div className="Content flex h-fit w-full flex-col items-center justify-start gap-8 border-t border-gray-400 px-4 pt-8 md:flex-row md:gap-24">
         <div className="Newsletter flex w-full flex-col items-center justify-start gap-6 md:items-start xl:w-1/2">
           <Link
             href="/"
             className="ImageLink self-center transition-all duration-300 hover:scale-105 hover:contrast-125"
           >
             <Image
-              className="h-auto w-full"
+              className="h-auto w-full max-w-[250px]"
               src="/logo-tall-black.png"
               alt="LifeGuide Holistic Healing Logo"
               width={380}

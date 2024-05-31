@@ -43,7 +43,7 @@ const NavBar = () => {
             setMobileActive(false);
             showModal(<ContactModal />);
           }}
-          size="md"
+          size="sm"
         />
       </div>
     );

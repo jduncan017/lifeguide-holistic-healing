@@ -20,10 +20,10 @@ const Button = ({
 
   switch (size) {
     case "sm":
-      buttonSize = "w-fit h-fit";
+      buttonSize = "sm:px-6 sm:py-3 px-4 py-3";
       break;
     case "md":
-      buttonSize = "sm:px-6 sm:py-3 px-4 py-3";
+      buttonSize = "sm:w-40 sm:py-3 w-52 py-3";
       break;
     case "lg":
       buttonSize = "w-full h-[52px]";

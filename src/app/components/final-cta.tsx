@@ -27,14 +27,14 @@ const FinalCTA = forwardRef<HTMLDivElement>((props, ref) => {
               text="Start Healing"
               rounded={false}
               colorFill={true}
-              size="md"
+              size="sm"
               onSubmit={() => showModal(<ContactModal />)}
             />
             <Button
               text="About Us"
               rounded={false}
               colorFill={false}
-              size="md"
+              size="sm"
               onSubmit={() => showModal(<ConstructionModal />)}
             />
           </div>
