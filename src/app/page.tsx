@@ -7,7 +7,6 @@ const Home = () => {
   const heroRef = useRef(null);
 
   function scrollToRef(ref: React.RefObject<HTMLDivElement>) {
-    console.log("ref!]");
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }

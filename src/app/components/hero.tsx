@@ -8,18 +8,18 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
   return (
-    <div className="HeroSection relative flex flex-col items-center p-4 pt-[85px] sm:min-h-screen sm:p-0">
-      <div className="ImageContainer absolute inset-0 overflow-hidden shadow-themeShadow sm:block sm:h-dvh">
+    <div className="HeroSection relative flex h-fit max-h-[1000px] flex-col items-center p-4 pt-[85px] sm:h-dvh sm:p-0">
+      <div className="ImageContainer absolute inset-0 max-h-[1000px] overflow-hidden shadow-themeShadow sm:block sm:h-dvh">
         <Image
           className="BackgroundImage h-full w-full object-cover"
-          src="/hero3.jpg"
+          src="/seashore.jpg"
           alt="Background"
           width={1728}
           height={1138}
           priority
         />
       </div>
-      <div className="TitleSection z-[5] h-fit max-w-[705px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-4 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
+      <div className="TitleSection max-w-[705px z-[5] h-fit max-h-[1000px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-4 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
         <Image
           className="Logo mx-auto w-auto"
           src="/logo-with-glow.png"
