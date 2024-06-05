@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import SiteButton from "./ui-components/site-button";
+import SiteButton from "./ui-components/SiteButton";
 
 interface HeroSectionProps {
   scrollToRef: () => void;

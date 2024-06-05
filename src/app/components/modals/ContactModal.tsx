@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import ModalWrapper from "~/app/components/modals/ModalWrapper";
-import SiteButton from "../ui-components/site-button";
+import ModalWrapper from "~/app/components/modals/modalWrapper";
+import SiteButton from "../ui-components/siteButton";
 import { useFormspark } from "@formspark/use-formspark";
 import { useModal } from "~/contexts/ModalContext";
-import SubmitConfirmModal from "./SubmitConfirmModal";
+import SubmitConfirmModal from "./submitConfirmModal";
 
 const FORMSPARK_FORM_ID = "fmXvbcpQF";
 

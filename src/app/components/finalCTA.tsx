@@ -1,10 +1,10 @@
 "use client";
 import React, { forwardRef } from "react";
 import Image from "next/image";
-import SiteButton from "./ui-components/site-button";
+import SiteButton from "./ui-components/SiteButton";
 import { useModal } from "~/contexts/ModalContext";
-import ContactModal from "./modals/ContactModal";
-import ConstructionModal from "./modals/ConstructionModal";
+import ContactModal from "./modals/contactModal";
+import ConstructionModal from "./modals/constructionModal";
 
 const FinalCTA = forwardRef<HTMLDivElement>((props, ref) => {
   const { showModal } = useModal();

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./HamburgerIcon.module.css";
+import styles from "./hamburgerIcon.module.css";
 
 interface HamburgerIconProps {
   menuOpen: boolean;

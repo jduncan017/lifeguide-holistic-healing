@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import HeroSection from "./components/hero";
-import FinalCTA from "./components/final-cta";
+import FinalCTA from "./components/finalCTA";
 
 const Home = () => {
   const heroRef = useRef(null);

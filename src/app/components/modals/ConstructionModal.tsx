@@ -1,9 +1,9 @@
 "use client";
 
-import ModalWrapper from "./ModalWrapper";
-import SiteButton from "../ui-components/site-button";
+import ModalWrapper from "./modalWrapper";
+import SiteButton from "../ui-components/siteButton";
 import { useModal } from "~/contexts/ModalContext";
-import ContactModal from "./ContactModal";
+import ContactModal from "./contactModal";
 
 const ConstructionModal = () => {
   const { hideModal, showModal } = useModal();
