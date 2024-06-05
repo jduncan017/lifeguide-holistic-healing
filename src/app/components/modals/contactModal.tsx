@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import ModalWrapper from "~/app/components/modals/modalWrapper";
-import SiteButton from "../ui-components/siteButton";
+import SiteButton from "../smallComponents/siteButton";
 import { useFormspark } from "@formspark/use-formspark";
 import { useModal } from "~/contexts/ModalContext";
 import SubmitConfirmModal from "./submitConfirmModal";

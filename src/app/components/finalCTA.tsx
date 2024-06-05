@@ -1,7 +1,7 @@
 "use client";
 import React, { forwardRef } from "react";
 import Image from "next/image";
-import SiteButton from "./ui-components/siteButton";
+import SiteButton from "./smallComponents/siteButton";
 import { useModal } from "~/contexts/ModalContext";
 import ContactModal from "./modals/contactModal";
 import ConstructionModal from "./modals/constructionModal";

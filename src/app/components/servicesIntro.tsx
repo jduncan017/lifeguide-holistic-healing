@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SiteButton from "./ui-components/siteButton";
+import SiteButton from "./smallComponents/siteButton";
 import { useModal } from "~/contexts/ModalContext";
 import ConstructionModal from "./modals/constructionModal";
 

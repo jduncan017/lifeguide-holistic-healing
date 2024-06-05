@@ -2,11 +2,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import SiteButton from "./ui-components/siteButton";
+import SiteButton from "./smallComponents/siteButton";
 import { useModal } from "~/contexts/ModalContext";
 import ContactModal from "./modals/contactModal";
 import ConstructionModal from "./modals/constructionModal";
-import HamburgerIcon from "./ui-components/hamburger-menu/hamburgerIcon";
+import HamburgerIcon from "./smallComponents/hamburgerMenu/hamburgerIcon";
 
 const NavBar = () => {
   const [mobileActive, setMobileActive] = useState(false);

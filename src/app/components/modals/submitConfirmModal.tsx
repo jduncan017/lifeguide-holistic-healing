@@ -1,7 +1,7 @@
 "use client";
 
 import ModalWrapper from "./modalWrapper";
-import SiteButton from "../ui-components/siteButton";
+import SiteButton from "../smallComponents/siteButton";
 import { useModal } from "~/contexts/ModalContext";
 
 export default function SubmitConfirmModal() {
