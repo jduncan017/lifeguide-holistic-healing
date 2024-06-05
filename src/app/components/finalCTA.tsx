@@ -3,8 +3,8 @@ import React, { forwardRef } from "react";
 import Image from "next/image";
 import SiteButton from "./ui-components/siteButton";
 import { useModal } from "~/contexts/ModalContext";
-// import ContactModal from "./modals/contactModal";
-// import ConstructionModal from "./modals/constructionModal";
+import ContactModal from "./modals/contactModal";
+import ConstructionModal from "./modals/constructionModal";
 
 const FinalCTA = forwardRef<HTMLDivElement>((props, ref) => {
   const { showModal } = useModal();
