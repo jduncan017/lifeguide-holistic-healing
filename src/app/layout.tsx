@@ -1,7 +1,7 @@
 import "~/styles/globals.css";
 
 import { TRPCReactProvider } from "~/trpc/react";
-// import NavBar from "./components/nav";
+import NavBar from "./components/nav";
 import Footer from "./components/footer";
 import { ModalProvider } from "~/contexts/ModalContext";
 
@@ -48,7 +48,7 @@ export default function RootLayout({
         <TRPCReactProvider>
           <ModalProvider>
             <div className="Page -z-20 m-auto h-fit max-w-[1728px] overflow-hidden bg-gradient-to-b from-neutralLight to-neutralDark">
-              {/* <NavBar /> */}
+              <NavBar />
               {children}
               <Footer />
             </div>
