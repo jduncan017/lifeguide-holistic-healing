@@ -6,15 +6,19 @@ type ButtonProps = {
   addClasses?: string;
   size?: "sm" | "md" | "lg";
   onSubmit?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  disabled?: boolean;
+  type?: "submit" | "reset" | "button";
 };
 
-const Button = ({
+const SiteButton = ({
   text,
   rounded,
   colorFill,
   addClasses,
   size,
   onSubmit,
+  disabled,
+  type,
 }: ButtonProps) => {
   let buttonSize: string;
 
@@ -34,13 +38,14 @@ const Button = ({
 
   return (
     <button
-      className={`Button duration-400 font-sans text-sm shadow-sm transition-all hover:scale-105 hover:bg-gray-600 hover:text-primaryLight sm:text-base ${buttonSize} ${addClasses} ${rounded ? "rounded-full" : "rounded-sm"} ${colorFill ? "bg-primary text-white" : "border border-gray-800 text-gray-800"}`}
-      type="button"
+      className={`SiteButton duration-400 font-sans text-sm shadow-sm transition-all hover:scale-105 hover:bg-gray-600 hover:text-primaryLight disabled:bg-gray-500 disabled:hover:cursor-not-allowed disabled:hover:text-white sm:text-base ${buttonSize} ${addClasses} ${rounded ? "rounded-full" : "rounded-sm"} ${colorFill ? "bg-primary text-white" : "border border-gray-800 text-gray-800"}`}
+      type={type ?? "button"}
       onClick={onSubmit}
+      disabled={disabled}
     >
       {text}
     </button>
   );
 };
 
-export default Button;
+export default SiteButton;

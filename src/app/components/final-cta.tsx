@@ -1,10 +1,10 @@
 "use client";
 import React, { forwardRef } from "react";
 import Image from "next/image";
-import Button from "./ui-components/button";
+import SiteButton from "./ui-components/site-button";
 import { useModal } from "~/contexts/ModalContext";
-import ContactModal from "./contact-modal";
-import ConstructionModal from "./ui-components/construction-modal";
+import ContactModal from "./modals/ContactModal";
+import ConstructionModal from "./modals/ConstructionModal";
 
 const FinalCTA = forwardRef<HTMLDivElement>((props, ref) => {
   const { showModal } = useModal();
@@ -23,14 +23,14 @@ const FinalCTA = forwardRef<HTMLDivElement>((props, ref) => {
             </div>
           </div>
           <div className="Actions inline-flex items-start justify-start gap-4 pt-4">
-            <Button
+            <SiteButton
               text="Start Healing"
               rounded={false}
               colorFill={true}
               size="sm"
               onSubmit={() => showModal(<ContactModal />)}
             />
-            <Button
+            <SiteButton
               text="About Us"
               rounded={false}
               colorFill={false}

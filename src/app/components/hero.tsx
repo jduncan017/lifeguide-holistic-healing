@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Button from "./ui-components/button";
+import SiteButton from "./ui-components/site-button";
 
 interface HeroSectionProps {
   scrollToRef: () => void;
@@ -19,7 +19,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
           priority
         />
       </div>
-      <div className="TitleSection max-w-[705px z-[5] h-fit max-h-[1000px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-4 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
+      <div className="TitleSection z-[5] h-fit max-h-[1000px] max-w-[705px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-4 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
         <Image
           className="Logo mx-auto w-auto"
           src="/logo-with-glow.png"
@@ -31,7 +31,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
           A path to find a greater you. Clear your mind and let go of
           subconscious stress.
         </p>
-        <Button
+        <SiteButton
           rounded={true}
           text="LEARN MORE"
           colorFill={true}

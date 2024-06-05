@@ -1,9 +1,9 @@
 "use client";
 
-import ModalWrapper from "./modal-wrapper";
-import Button from "./button";
+import ModalWrapper from "./ModalWrapper";
+import SiteButton from "../ui-components/site-button";
 import { useModal } from "~/contexts/ModalContext";
-import ContactModal from "../contact-modal";
+import ContactModal from "./ContactModal";
 
 const ConstructionModal = () => {
   const { hideModal, showModal } = useModal();
@@ -20,22 +20,22 @@ const ConstructionModal = () => {
           }
         </p>
         <div className="ButtonContainer flex h-fit w-fit gap-4">
-          <Button
+          <SiteButton
             text="Contact Us"
             onSubmit={() => showModal(<ContactModal />)}
             colorFill={true}
             rounded={false}
             size="md"
             addClasses="mt-4"
-          ></Button>
-          <Button
+          ></SiteButton>
+          <SiteButton
             text="Close"
             onSubmit={() => hideModal()}
             colorFill={true}
             rounded={false}
             size="md"
             addClasses="mt-4"
-          ></Button>
+          ></SiteButton>
         </div>
       </div>
     </ModalWrapper>

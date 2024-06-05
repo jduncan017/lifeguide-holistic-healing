@@ -2,10 +2,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./ui-components/button";
+import SiteButton from "./ui-components/site-button";
 import { useModal } from "~/contexts/ModalContext";
-import ContactModal from "~/app/components/contact-modal";
-import ConstructionModal from "./ui-components/construction-modal";
+import ContactModal from "~/app/components/modals/ContactModal";
+import ConstructionModal from "./modals/ConstructionModal";
 import HamburgerIcon from "./ui-components/hamburger-menu/HamburgerIcon";
 
 const NavBar = () => {
@@ -34,8 +34,8 @@ const NavBar = () => {
           </button>
         ))}
 
-        {/* Contact Button */}
-        <Button
+        {/* Contact SiteButton */}
+        <SiteButton
           colorFill={true}
           rounded={mobileActive}
           text="CONTACT"
@@ -67,6 +67,7 @@ const NavBar = () => {
           {renderMenu()}
         </div>
       </div>
+
       {/* Mobile Menu */}
       <div
         className={`
