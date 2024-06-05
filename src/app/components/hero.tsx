@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import SiteButton from "./ui-components/SiteButton";
+import SiteButton from "./ui-components/siteButton";
 
 interface HeroSectionProps {
   scrollToRef: () => void;
@@ -8,18 +8,18 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
   return (
-    <div className="HeroSection relative flex h-fit max-h-[1000px] flex-col items-center p-4 pt-[85px] sm:h-dvh sm:p-0">
-      <div className="ImageContainer absolute inset-0 max-h-[1000px] overflow-hidden shadow-themeShadow sm:block sm:h-dvh">
+    <div className="HeroSection relative flex h-fit max-h-[1200px] flex-col items-center p-4 pt-[85px] sm:h-dvh sm:p-0">
+      <div className="ImageContainer absolute inset-0 z-10 max-h-[1200px] overflow-hidden shadow-themeShadow sm:block sm:h-dvh">
         <Image
           className="BackgroundImage h-full w-full object-cover"
-          src="/seashore.jpg"
+          src="/field-sunset.jpg"
           alt="Background"
           width={1728}
           height={1138}
           priority
         />
       </div>
-      <div className="TitleSection z-[5] h-fit max-h-[1000px] max-w-[705px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-4 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
+      <div className="TitleSection z-20 h-fit max-h-[1000px] max-w-[705px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-4 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
         <Image
           className="Logo mx-auto w-auto"
           src="/logo-with-glow.png"
@@ -40,7 +40,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
           onSubmit={() => scrollToRef()}
         />
       </div>
-      <div className="BackgroundLighting bottom-0 -z-10 h-full w-full rounded-lg bg-tertiaryYellow blur-[50px] sm:absolute sm:h-[340px]"></div>
+      <div className="BackgroundLighting -bottom-5 h-full w-full rounded-lg bg-tertiaryYellow blur-[50px] sm:absolute sm:h-[340px]"></div>
     </div>
   );
 };

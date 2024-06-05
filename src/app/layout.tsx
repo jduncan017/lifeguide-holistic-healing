@@ -47,7 +47,7 @@ export default function RootLayout({
       <body className="Body h-fit overflow-x-hidden bg-gray-700">
         <TRPCReactProvider>
           <ModalProvider>
-            <div className="Page m-auto h-fit max-w-[1728px] overflow-hidden bg-gradient-to-b from-primary via-neutralLight to-neutralDark">
+            <div className="Page -z-20 m-auto h-fit max-w-[1728px] overflow-hidden bg-gradient-to-b from-neutralLight to-neutralDark">
               <NavBar />
               {children}
               <Footer />
