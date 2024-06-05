@@ -27,7 +27,13 @@ const NavBar = () => {
     return (
       <div className="LinksContainer flex flex-col gap-6 px-16 pt-10 text-lg font-medium sm:flex-row sm:items-center sm:gap-4 sm:p-0 md:gap-6">
         {links.map((link, index) => (
-          <button key={index} onClick={() => showModal(<ConstructionModal />)}>
+          <button
+            key={index}
+            onClick={() => {
+              showModal(<ConstructionModal />);
+              setMobileActive(false);
+            }}
+          >
             <p className="AboutText text-2xl uppercase text-primaryDark transition-all duration-300 hover:text-gray-700 hover:underline sm:text-sm md:text-base">
               {link.text}
             </p>

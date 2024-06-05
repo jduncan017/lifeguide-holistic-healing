@@ -49,8 +49,8 @@ export default function ContactModal() {
   return (
     <ModalWrapper>
       <div className="contactModal">
-        <div className="formWrapper scrollbar-none relative flex max-h-[100dvh] w-full max-w-[550px] flex-col overflow-y-auto p-6 text-center font-sans text-gray-800">
-          <h1 className="mb-2 mt-4 border-b border-dotted border-gray-500 font-serif text-4xl font-bold uppercase leading-10">
+        <div className="formWrapper relative flex max-h-[100dvh] w-full max-w-[550px] flex-col px-6 text-center font-sans text-gray-800">
+          <h1 className="mb-2 mt-0 border-b border-dotted border-gray-500 font-serif text-4xl font-bold uppercase leading-10">
             Start Your Journey Today:
           </h1>
           <p className="formDescription m-0 w-full text-lg font-normal leading-6">

@@ -10,7 +10,7 @@ const ConstructionModal = () => {
 
   return (
     <ModalWrapper>
-      <div className="404Container flex h-fit w-[500px] flex-col items-center gap-4 rounded-2xl p-5 px-8 py-8 text-center font-serif">
+      <div className="404Container flex h-fit flex-col items-center gap-4 rounded-2xl text-center font-serif">
         <h2 className="Header text-3xl font-bold uppercase text-gray-800">
           {"Coming Soon!"}
         </h2>
@@ -19,14 +19,13 @@ const ConstructionModal = () => {
             "This site is still under construction. For any questions, please reach out via our contact form!"
           }
         </p>
-        <div className="ButtonContainer flex h-fit w-fit gap-4">
+        <div className="ButtonContainer mt-4 flex h-fit w-fit flex-col gap-2 sm:flex-row sm:gap-4">
           <SiteButton
             text="Contact Us"
             onSubmit={() => showModal(<ContactModal />)}
             colorFill={true}
             rounded={false}
             size="md"
-            addClasses="mt-4"
           ></SiteButton>
           <SiteButton
             text="Close"
@@ -34,7 +33,6 @@ const ConstructionModal = () => {
             colorFill={true}
             rounded={false}
             size="md"
-            addClasses="mt-4"
           ></SiteButton>
         </div>
       </div>

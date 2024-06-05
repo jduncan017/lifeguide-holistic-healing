@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import type { FC, ReactElement } from "react";
 import { motion } from "framer-motion";
 import { useModal } from "~/contexts/ModalContext";
@@ -16,16 +17,24 @@ const ModalWrapper: FC<ModalWrapperProps> = ({ children }) => {
     event.stopPropagation();
   };
 
+  // Disable scrolling when modal is open
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   return (
     <div
-      className="modal__backdrop fixed inset-0 z-20 flex h-dvh justify-center bg-blurWhite backdrop-blur-sm backdrop-filter"
+      className="modal__backdrop fixed inset-0 z-20 flex h-dvh items-center justify-center bg-blurWhite backdrop-blur-sm backdrop-filter"
       onClick={hideModal}
     >
       <motion.div
         animate={{ scale: 1 }}
         initial={{ scale: 0 }}
         transition={{ duration: 0.2 }}
-        className="modal__content relative m-auto h-fit w-fit rounded-2xl bg-gradient-to-br from-neutral to-neutralDark px-6 py-2 text-center shadow-themeShadow backdrop-blur-md"
+        className="modal__content scrollbar-hide relative mt-20 h-fit max-h-[88vh] w-fit max-w-[98vw] overflow-y-scroll rounded-2xl bg-gradient-to-br from-neutral to-neutralDark px-6 py-6 text-center shadow-themeShadow backdrop-blur-md sm:py-10"
         onClick={handleModalContentClick}
       >
         <button

@@ -8,8 +8,8 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
   return (
-    <div className="HeroSection relative flex h-fit max-h-[1200px] flex-col items-center p-4 pt-[85px] sm:h-dvh sm:p-0">
-      <div className="ImageContainer absolute inset-0 z-10 max-h-[1200px] overflow-hidden shadow-themeShadow sm:block sm:h-dvh">
+    <div className="HeroSection relative flex h-fit max-h-[1200px] min-h-[fit] flex-col items-center p-4 pt-[85px] sm:h-dvh sm:p-0">
+      <div className="ImageContainer absolute inset-0 z-10 h-full overflow-hidden shadow-themeShadow sm:block">
         <Image
           className="BackgroundImage h-full w-full object-cover"
           src="/field-sunset.jpg"
