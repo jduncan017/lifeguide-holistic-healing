@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import HeroSection from "./components/hero";
 // import FinalCTA from "./components/finalCTA";
 // import ServicesIntro from "./components/servicesIntro";
-import ServicesOverview from "./components/servicesOverview";
+// import ServicesOverview from "./components/servicesOverview";
 
 const Home = () => {
   const heroRef = useRef(null);
