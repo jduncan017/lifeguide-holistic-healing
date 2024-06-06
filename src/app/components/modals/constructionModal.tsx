@@ -10,7 +10,7 @@ const ConstructionModal = () => {
 
   return (
     <ModalWrapper>
-      <div className="404Container flex h-fit flex-col items-center gap-4 rounded-2xl text-center font-serif">
+      <div className="404Container flex h-fit max-w-[500px] flex-col items-center gap-4 rounded-2xl text-center font-serif">
         <h2 className="Header text-3xl font-bold uppercase text-gray-800">
           {"Coming Soon!"}
         </h2>
