@@ -11,16 +11,19 @@ const FinalCTA = forwardRef<HTMLDivElement>((props, ref) => {
 
   return (
     <div ref={ref} className="finalCTA">
-      <div className="CtaSection m-auto flex h-fit w-full flex-col-reverse gap-4 overflow-hidden rounded border border-gray-800 bg-neutral p-6 shadow-themeShadow sm:gap-4 sm:p-8 md:p-12 lg:h-[420px] lg:flex-row lg:p-0">
-        <div className="LeftColumn flex h-full w-full flex-col items-start justify-center lg:w-[700px] lg:p-10">
-          <div className="Content flex h-fit flex-col items-start justify-start gap-2 self-stretch lg:gap-6">
-            <div className="Heading self-stretch font-sans text-2xl font-bold leading-tight text-gray-800 sm:text-4xl">
+      <div className="CtaSection m-auto flex h-fit w-full flex-col-reverse gap-4 overflow-hidden rounded border border-gray-800 bg-neutral p-6 shadow-themeShadow sm:gap-2 sm:p-8 md:p-12 lg:h-[420px] lg:flex-row lg:p-0 xl:h-[380px]">
+        <div className="LeftColumn flex h-full w-full flex-col items-start lg:w-[700px] lg:p-10">
+          <div className="Content flex h-fit flex-col items-start justify-start gap-2 self-stretch lg:gap-4">
+            <h3 className="SectionHeader font-sans text-xl font-semibold uppercase text-primaryDark">
+              Begin Your Journey
+            </h3>
+            <h2 className="Heading font-sans text-gray-800">
               Discover Personalized Healing Solutions
-            </div>
-            <div className="Text self-stretch font-normal leading-tight text-gray-700 sm:text-xl md:leading-relaxed">
+            </h2>
+            <p className="Text text-gray-800">
               Experience the Power of Holistic Healing Methods for Your
               Well-being
-            </div>
+            </p>
           </div>
           <div className="Actions inline-flex items-start justify-start gap-4 pt-8">
             <SiteButton
@@ -41,7 +44,7 @@ const FinalCTA = forwardRef<HTMLDivElement>((props, ref) => {
         </div>
         <div className="ImageContainer relative flex h-full flex-grow lg:p-0">
           <Image
-            className="Image inset-0 m-auto self-center rounded-lg object-cover lg:h-full lg:w-full lg:rounded-none"
+            className="Image inset-0 h-full w-full self-center rounded-lg object-cover lg:rounded-none"
             src="/final-cta-image.jpg"
             width={720}
             height={480}

@@ -2,7 +2,7 @@
 type ButtonProps = {
   text: string;
   rounded: boolean;
-  colorFill: boolean;
+  colorFill: true | false | "variable";
   addClasses?: string;
   size?: "sm" | "md" | "lg";
   onSubmit?: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -21,6 +21,7 @@ const SiteButton = ({
   type,
 }: ButtonProps) => {
   let buttonSize: string;
+  let buttonColor: string;
 
   switch (size) {
     case "sm":
@@ -33,12 +34,25 @@ const SiteButton = ({
       buttonSize = "w-full h-[52px]";
       break;
     default:
-      buttonSize = "sm:py-2 sm:px-4 py-1 px-2";
+      buttonSize = "w-20 h-10";
+  }
+
+  switch (colorFill) {
+    case true:
+      buttonColor = "bg-primary text-white";
+      break;
+    case false:
+      buttonColor = "border border-gray-800 text-gray-800";
+      break;
+    case "variable":
+      buttonColor =
+        "bg-neutralLight border-none text-gray-800 md:border md:border-solid md:border-white md:bg-transparent md:text-white";
+      break;
   }
 
   return (
     <button
-      className={`SiteButton duration-400 font-sans text-sm shadow-sm transition-all hover:scale-105 hover:bg-gray-600 hover:text-primaryLight disabled:bg-gray-500 disabled:hover:cursor-not-allowed disabled:hover:text-white sm:text-base ${buttonSize} ${addClasses} ${rounded ? "rounded-full" : "rounded-sm"} ${colorFill ? "bg-primary text-white" : "border border-gray-800 text-gray-800"}`}
+      className={`SiteButton duration-400 font-sans text-sm shadow-sm transition-all hover:scale-105 hover:bg-gray-600 hover:text-primaryLight disabled:bg-gray-500 disabled:hover:cursor-not-allowed disabled:hover:text-white sm:text-base ${buttonSize} ${addClasses} ${rounded ? "rounded-full" : "rounded-sm"} ${buttonColor}`}
       type={type ?? "button"}
       onClick={onSubmit}
       disabled={disabled}

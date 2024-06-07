@@ -19,7 +19,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
           priority
         />
       </div>
-      <div className="TitleSection z-20 h-fit max-h-[1000px] max-w-[705px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-4 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
+      <div className="TitleSection z-20 h-fit max-h-[1000px] max-w-[705px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-6 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
         <Image
           className="Logo mx-auto w-auto"
           src="/logo-with-glow.png"
@@ -27,15 +27,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
           width={595}
           height={407}
         />
-        <p className="Description m-auto w-full max-w-[450px] text-lg font-light uppercase leading-6 text-gray-800 sm:text-xl lg:text-3xl">
+        <h1 className="HeroTitle m-auto w-full max-w-[450px] font-light text-gray-800">
           A path to find a greater you. Clear your mind and let go of
           subconscious stress.
-        </p>
+        </h1>
         <SiteButton
           rounded={true}
           text="LEARN MORE"
           colorFill={true}
-          addClasses="mb-4 mt-10"
+          addClasses="mb-4 mt-6 lg:mt-10"
           size="md"
           onSubmit={() => scrollToRef()}
         />

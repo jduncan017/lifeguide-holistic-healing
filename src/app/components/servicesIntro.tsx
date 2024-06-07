@@ -7,19 +7,19 @@ export default function ServicesIntro() {
   const { showModal } = useModal();
 
   return (
-    <div className="ServicesContainer flex h-fit w-full flex-col-reverse items-center gap-4 text-center lg:h-[380px] lg:flex-row lg:items-start lg:justify-between lg:text-start xl:gap-32">
-      <div className="LeftContainer flex h-fit w-full flex-col items-center lg:max-w-[50%] lg:items-start">
-        <div className="Transform font-sans text-xl font-semibold uppercase text-primaryDark">
+    <div className="ServicesContainer flex h-fit w-full max-w-[700px] flex-col-reverse items-center gap-4 self-center text-center lg:h-[380px] lg:max-w-none lg:flex-row lg:items-start lg:justify-between lg:text-start xl:gap-32">
+      <div className="LeftContainer flex h-fit w-full flex-col items-center md:gap-0 lg:max-w-[50%] lg:items-start">
+        <h3 className="SectionHeader font-sans text-xl font-semibold uppercase text-primaryDark">
           Transform
-        </div>
-        <div className="Title mt-2 font-sans text-4xl font-extrabold uppercase leading-tight text-gray-800">
+        </h3>
+        <h2 className="Title mt-2 font-sans text-gray-800">
           Discover the power of holistic healing
-        </div>
-        <div className="Description mt-5 text-xl capitalize text-slate-800">
+        </h2>
+        <p className="Description mt-3 text-slate-800">
           Experience the transformative power of Brainspotting, Energy Medicine,
           and Life Guidance. Our holistic approach helps you achieve balance,
           clarity, and personal growth.
-        </div>
+        </p>
         <SiteButton
           text="View Servies"
           rounded={false}

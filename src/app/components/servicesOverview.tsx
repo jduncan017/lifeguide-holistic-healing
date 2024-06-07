@@ -6,9 +6,9 @@ import ImageWithOverlay from "./smallComponents/imageWithOverlay";
 type ServiceKey = keyof typeof Services;
 
 const selectedButtonStyles = {
-  energyMedicine: "bg-secondaryBlue text-white scale-105",
-  lifeGuidance: "bg-tertiaryYellow text-gray-900 scale-105",
-  brainSpotting: "bg-primary text-white scale-105",
+  energyMedicine: "bg-secondaryBlue text-white shadow-md",
+  lifeGuidance: "bg-tertiaryYellow text-gray-900 shadow-md",
+  brainSpotting: "bg-primary text-white shadow-md",
 };
 
 export default function ServicesOverview() {
@@ -16,23 +16,26 @@ export default function ServicesOverview() {
     useState<ServiceKey>("energyMedicine");
 
   return (
-    <div className="Container flex h-fit w-full flex-col items-center text-center md:items-start md:text-start lg:flex-col lg:justify-between">
-      <div className="SectionTitle font-sans text-xl font-semibold uppercase text-primaryDark">
+    <div className="Container flex h-fit w-full flex-col rounded-md border border-gray-800 bg-neutral px-6 py-6 text-start shadow-themeShadow sm:px-12 sm:py-8 md:items-start md:p-8 lg:flex-col lg:justify-between">
+      <h3 className="SectionTitle font-sans text-primaryDark">
         Let Us Be Your Guide
-      </div>
-      <div className="Title mt-2 font-sans text-4xl font-extrabold uppercase leading-tight text-gray-800">
+      </h3>
+      <h2 className="Title mt-2 font-sans text-gray-800">
         Read More About Our Services
-      </div>
-      <div className="BottomContainer mt-3 flex h-fit w-full flex-col items-center justify-between gap-6 md:flex-row md:items-start lg:mt-5 lg:items-start lg:gap-10">
-        <div className="LeftContainer flex h-fit w-full flex-col items-center md:max-w-[50%] md:items-start lg:max-w-[55%] xl:max-w-[50%]">
-          <div className="ButtonContainer mb-3 flex w-full flex-wrap items-center justify-center gap-3 font-sans font-semibold text-white sm:flex-row sm:flex-nowrap md:justify-between lg:mb-5 lg:w-fit lg:gap-4">
+      </h2>
+      <div className="BottomContainer mt-3 flex h-fit w-full flex-col justify-between md:flex-row md:items-start md:gap-6 lg:mt-5 lg:gap-10">
+        <div className="LeftContainer flex h-fit w-full flex-col md:max-w-[50%] md:items-start lg:max-w-[55%] xl:max-w-[50%]">
+          <div className="ImageContainer mb-4 flex justify-start md:hidden">
+            {ImageWithOverlay(Services[selectedButton])}
+          </div>
+          <div className="ButtonContainer lg:w-fi mb-3 flex w-full flex-wrap justify-start gap-3 font-sans font-semibold text-white sm:flex-row sm:flex-nowrap md:flex-wrap md:justify-between lg:mb-5 lg:flex-nowrap lg:gap-4">
             {Object.keys(Services).map((key) => (
               <button
                 key={key}
-                className={`min-h-[60px] rounded-md px-4 py-2 leading-5 ${
+                className={`min-h-[45px] w-full rounded-md px-2 py-2 leading-5 shadow-sm transition-all duration-200 hover:scale-105 md:min-h-[60px] md:px-4 ${
                   selectedButton === key
                     ? selectedButtonStyles[key]
-                    : "border-2 border-black bg-none text-black transition-transform duration-200 hover:scale-105"
+                    : "border-2 border-black bg-none text-black transition-transform duration-200"
                 }`}
                 onClick={() => setSelectedButton(key as ServiceKey)}
               >
@@ -40,21 +43,18 @@ export default function ServicesOverview() {
               </button>
             ))}
           </div>
-          <div className="ImageContainer flex justify-center md:hidden">
-            {ImageWithOverlay(Services[selectedButton])}
-          </div>
-          <div className="Title mt-2 font-sans text-2xl font-bold capitalize leading-tight text-gray-800 lg:text-3xl">
+          <h4 className="Title mt-2 font-sans text-gray-800">
             {Services[selectedButton].sectionTitle}
-          </div>
-          <div className="Description mt-2 text-xl font-normal capitalize leading-6 text-slate-800 lg:mt-5 lg:leading-7">
+          </h4>
+          <p className="Description mt-2 text-slate-800 lg:mt-5">
             {Services[selectedButton].description}
-          </div>
+          </p>
           <div className="ListContainer hidden lg:block">
             <ItemList list={Services[selectedButton].bulletpoints} />
           </div>
         </div>
-        <div className="RightContainer flex h-fit flex-col">
-          <div className="ImageContainer hidden justify-center md:flex">
+        <div className="RightContainer flex h-full flex-col">
+          <div className="ImageContainer hidden justify-start md:flex">
             {ImageWithOverlay(Services[selectedButton])}
           </div>
         </div>

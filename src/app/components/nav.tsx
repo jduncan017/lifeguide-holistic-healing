@@ -34,7 +34,7 @@ const NavBar = () => {
               setMobileActive(false);
             }}
           >
-            <p className="AboutText text-2xl uppercase text-primaryDark transition-all duration-300 hover:text-gray-700 hover:underline sm:text-sm md:text-base">
+            <p className="AboutText uppercase text-primaryDark transition-all duration-300 hover:text-gray-700 hover:underline">
               {link.text}
             </p>
           </button>
