@@ -21,7 +21,7 @@ export default function ServicesIntro() {
           clarity, and personal growth.
         </p>
         <SiteButton
-          text="View Servies"
+          text="View Services"
           rounded={false}
           colorFill={true}
           size="md"
