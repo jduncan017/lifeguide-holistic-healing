@@ -11,7 +11,7 @@ export default function ItemList({ list }: ItemListProps): ReactNode {
       <li key={index} className="ListItem mt-4 flex gap-2 text-xl font-normal">
         <Image
           className="Leaf aspect-square h-6"
-          src="/leaf.png"
+          src="/leaf.webp"
           alt="accent leaf"
           width={24}
           height={24}

@@ -31,7 +31,7 @@ export default function ServicesIntro() {
       </div>
       <Image
         className="ZenImage h-auto w-2/3 max-w-[350px] lg:h-full lg:w-auto"
-        src="/zen-photo.png"
+        src="/zen-photo.webp"
         alt="Zen image"
         width={300}
         height={369}

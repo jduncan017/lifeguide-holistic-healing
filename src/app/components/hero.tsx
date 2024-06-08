@@ -12,7 +12,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
       <div className="ImageContainer absolute inset-0 z-10 h-full min-h-[100vw] overflow-hidden shadow-themeShadow sm:block sm:min-h-[72vw] md:min-h-[78vw] lg:min-h-[68vw] xl:min-h-[62vw] 2xl:min-h-[50vw]">
         <Image
           className="BackgroundImage h-full w-full object-cover"
-          src="/cloud-field.jpeg"
+          src="/cloud-field.webp"
           alt="Background"
           width={1728}
           height={1138}
@@ -22,7 +22,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
       <div className="TitleSection z-20 h-fit max-h-[1000px] max-w-[705px] rounded bg-gradient-to-b from-heroPink via-heroOrange to-heroStone p-6 text-center shadow-themeShadow backdrop-blur-md backdrop-filter sm:m-auto sm:w-[60%] sm:rounded-2xl sm:p-10 lg:w-1/2">
         <Image
           className="Logo mx-auto w-auto"
-          src="/logo-with-glow.png"
+          src="/logo-with-glow.webp"
           alt="LifeGuide Logo"
           width={595}
           height={407}

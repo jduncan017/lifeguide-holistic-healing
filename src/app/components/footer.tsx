@@ -13,7 +13,7 @@ const Footer = () => {
           >
             <Image
               className="h-auto w-full max-w-[250px]"
-              src="/logo-tall-black.png"
+              src="/logo-tall-black.webp"
               alt="LifeGuide Holistic Healing Logo"
               width={380}
               height={100}

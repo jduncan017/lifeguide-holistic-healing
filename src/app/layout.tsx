@@ -24,7 +24,7 @@ export const metadata = {
   },
   openGraph: {
     images: {
-      url: "/opengraph.png",
+      url: "/opengraph.webp",
       width: 1903,
       height: 997,
     },

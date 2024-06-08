@@ -24,7 +24,7 @@ export const Services: Record<
     ],
     imageTitle: "Revitalize Your Body And Mind With Energy Healing",
     button: "Energy Medicine",
-    image: "/blue-ocean.jpg",
+    image: "/blue-ocean.webp",
   },
   brainSpotting: {
     sectionTitle: "Transform Your Life with BrainSpotting",
@@ -38,7 +38,7 @@ export const Services: Record<
     ],
     imageTitle: "find mental clarity with brain spotting",
     button: "Brain Spotting",
-    image: "/space.jpg",
+    image: "/space.webp",
   },
   lifeGuidance: {
     sectionTitle: "Navigate Your Journey with LifeGuidance",
@@ -53,6 +53,6 @@ export const Services: Record<
     ],
     imageTitle: "discover the path forward with tailored life guidance",
     button: "Life Guidance",
-    image: "/grass-field.jpg",
+    image: "/grass-field.webp",
   },
 };

@@ -6,7 +6,7 @@ const NotFound = () => {
       <div className="ImageContainer absolute inset-0 -z-10 h-dvh overflow-hidden bg-gray-400 shadow-themeShadow">
         <Image
           className="BackgroundImage h-full w-full"
-          src="/underwater.jpg"
+          src="/underwater.webp"
           alt="Background"
           width={1728}
           height={1138}

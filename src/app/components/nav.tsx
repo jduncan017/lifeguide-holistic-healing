@@ -64,7 +64,7 @@ const NavBar = () => {
             className="transition-all duration-300 hover:scale-105 hover:contrast-125"
           >
             <Image
-              src="/logo-wide-black.png"
+              src="/logo-wide-black.webp"
               alt="LifeGuide Holistic Healing Logo"
               width={190}
               height={50}
@@ -86,7 +86,7 @@ const NavBar = () => {
             className="transition-all duration-300 hover:scale-105 hover:contrast-125"
           >
             <Image
-              src="/logo-wide-black.png"
+              src="/logo-wide-black.webp"
               alt="LifeGuide Holistic Healing Logo"
               width={190}
               height={50}

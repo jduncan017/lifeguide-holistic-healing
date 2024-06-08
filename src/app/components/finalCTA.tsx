@@ -45,7 +45,7 @@ const FinalCTA = forwardRef<HTMLDivElement>((props, ref) => {
         <div className="ImageContainer relative flex h-full flex-grow lg:p-0">
           <Image
             className="Image inset-0 h-full w-full self-center rounded-lg object-cover lg:rounded-none"
-            src="/final-cta-image.jpg"
+            src="/final-cta-image.webp"
             width={720}
             height={480}
             alt="Girl stares into canyon"
