@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Services } from "../lib/services";
 import ItemList from "./smallComponents/itemList";
 import ImageWithOverlay from "./smallComponents/imageWithOverlay";
@@ -14,6 +14,16 @@ const selectedButtonStyles = {
 export default function ServicesOverview() {
   const [selectedButton, setSelectedButton] =
     useState<ServiceKey>("energyMedicine");
+
+  useEffect(() => {
+    const preloadImages = () => {
+      Object.values(Services).forEach((service) => {
+        const img = new Image();
+        img.src = service.image;
+      });
+    };
+    preloadImages();
+  }, []);
 
   return (
     <div className="Container flex h-fit w-full flex-col rounded-md border border-gray-800 bg-neutral px-6 py-6 text-start shadow-themeShadow sm:px-12 sm:py-8 md:items-start md:p-8 lg:flex-col lg:justify-between">

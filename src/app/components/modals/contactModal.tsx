@@ -49,18 +49,18 @@ export default function ContactModal() {
   return (
     <ModalWrapper>
       <div className="contactModal">
-        <div className="formWrapper relative flex max-h-[100dvh] w-full max-w-[550px] flex-col px-6 text-center font-sans text-gray-800">
-          <h1 className="mb-2 mt-0 border-b border-dotted border-gray-500 font-serif text-4xl font-bold uppercase leading-10">
+        <div className="formWrapper relative flex max-h-[100dvh] w-full max-w-[550px] flex-col px-2 font-sans text-gray-800 sm:px-6">
+          <h1 className="font-3xl mb-2 mt-0 border-b border-dotted border-gray-500 font-serif font-bold uppercase leading-10 sm:text-4xl">
             Start Your Journey Today:
           </h1>
-          <p className="formDescription m-0 w-full text-lg font-normal leading-6">
+          <p className="formDescription m-0 w-full">
             Have a question? Looking to try one of our services?
             <br /> Reach out below!
           </p>
 
           {/* Contact Form */}
           <form
-            className="contactForm flex w-full flex-col items-center gap-4 pt-5 text-start"
+            className="contactForm flex w-full flex-col items-center gap-2 pt-2 text-start sm:gap-4 sm:pt-5"
             onSubmit={handleSubmit}
             noValidate
           >
@@ -172,6 +172,7 @@ export default function ContactModal() {
               colorFill={true}
               rounded={true}
               size="md"
+              addClasses="mb-4"
               disabled={buttonDisabled}
             />
           </form>
