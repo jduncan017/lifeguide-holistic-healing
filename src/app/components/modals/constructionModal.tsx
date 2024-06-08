@@ -10,13 +10,13 @@ const ConstructionModal = () => {
 
   return (
     <ModalWrapper>
-      <div className="404Container flex h-fit max-w-[450px] flex-col items-center rounded-2xl text-center font-serif">
+      <div className="404Container flex h-fit max-w-[450px] flex-col items-center rounded-2xl py-6 text-center font-serif">
         <h2 className="Header text-3xl text-gray-800">Coming Soon!</h2>
-        <p className="Description max-w-[400px] text-gray-600">
+        <p className="Description mt-1 max-w-[400px] leading-6 text-gray-600 sm:mt-0 sm:max-w-[450px] sm:leading-7">
           This site is still under construction. For any questions, please reach
           out via our contact form!
         </p>
-        <div className="ButtonContainer mt-6 flex h-fit w-fit flex-wrap justify-center gap-4 px-8 sm:gap-4">
+        <div className="ButtonContainer mt-6 flex h-fit w-fit flex-wrap justify-center gap-4 sm:gap-4">
           <SiteButton
             text="Contact Us"
             onSubmit={() => showModal(<ContactModal />)}

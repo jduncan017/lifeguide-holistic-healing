@@ -27,7 +27,7 @@ const ModalWrapper: FC<ModalWrapperProps> = ({ children }) => {
 
   return (
     <div
-      className="modal__backdrop fixed inset-0 z-20 flex h-dvh items-center justify-center bg-blurWhite backdrop-blur-sm backdrop-filter"
+      className="modal__backdrop fixed inset-0 z-20 flex h-dvh items-center justify-center bg-blurWhite p-8 backdrop-blur-sm backdrop-filter"
       onClick={hideModal}
     >
       <motion.div

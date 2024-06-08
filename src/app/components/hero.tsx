@@ -11,7 +11,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
     <div className="HeroSection relative flex h-fit max-h-[1200px] flex-col items-center p-4 pt-[85px] sm:h-dvh  sm:min-h-[72vw] sm:p-0 md:min-h-[78vw] lg:min-h-[68vw] xl:min-h-[62vw] 2xl:min-h-[50vw]">
       <div className="ImageContainer absolute inset-0 z-10 h-full min-h-[100vw] overflow-hidden shadow-themeShadow sm:block sm:min-h-[72vw] md:min-h-[78vw] lg:min-h-[68vw] xl:min-h-[62vw] 2xl:min-h-[50vw]">
         <Image
-          className="BackgroundImage h-full w-full object-cover "
+          className="BackgroundImage h-full w-full object-cover"
           src="/cloud-field.jpeg"
           alt="Background"
           width={1728}
