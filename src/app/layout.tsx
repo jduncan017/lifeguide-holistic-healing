@@ -1,4 +1,5 @@
 import "~/styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import NavBar from "./components/nav";
@@ -51,6 +52,7 @@ export default function RootLayout({
               <NavBar />
               {children}
               <Footer />
+              <Analytics />
             </div>
           </ModalProvider>
         </TRPCReactProvider>
