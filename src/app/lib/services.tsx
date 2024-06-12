@@ -1,6 +1,7 @@
 export interface ServiceItem {
   sectionTitle: string;
-  description: string;
+  description1: string;
+  description2: string;
   bulletpoints: string[];
   imageTitle: string;
   button: string;
@@ -13,8 +14,9 @@ export const Services: Record<
 > = {
   energyMedicine: {
     sectionTitle: "Unlock Your Full Potential With Energy Medicine",
-    description: `Utilizes the Energy Matrix Clearing System© in combination with gem and mineral essences to 
-    remediate stuck/clogged/blocked energy within the body resulting in more focus, resolution of past negative 
+    description1: `Utilizes the Energy Matrix Clearing System© in combination with gem and mineral essences to 
+    remediate stuck/clogged/blocked energy within the body.`,
+    description2: `Results in improved focus, resolution of past negative 
     experiences, and increased harmony and personal peace.
     `,
     bulletpoints: [
@@ -28,9 +30,10 @@ export const Services: Record<
   },
   brainSpotting: {
     sectionTitle: "Transform Your Life with BrainSpotting",
-    description: `A somatic (body-based) modality for achieving goals, facilitating transitions, enhancing performance, 
-    and expanding creativity. People have used Brainspotting for anything from achieving a better golf score or eliminating
-     a fear of public speaking to being a calmer and more focused parent to releasing past hurts and disappointments`,
+    description1: `Find a sense of calm while releasing past trauma and disappointments.`,
+    description2: `A somatic (body-based) modality for achieving goals, facilitating transitions, enhancing performance, 
+    and expanding creativity. People have used Brainspotting for anything from improving sports performance to eliminating
+     their fear of public speaking.`,
     bulletpoints: [
       "Overcome fears and enhance performance",
       "Facilitate personal transitions and goal achievement",
@@ -42,10 +45,10 @@ export const Services: Record<
   },
   lifeGuidance: {
     sectionTitle: "Navigate Your Journey with LifeGuidance",
-    description: `While a coach can teach you plays and send you out in the field – in the end, they observe you 
-    from the sidelines. Guides, on the other hand, accompany you on your journey. Rooted in Christian-Judeo, Buddhist
-     and Nature-based values and practices, along with Intuitive Healing techniques, LifeGuide Holistic Healing LifeGuidance
-      can help you focus on the path ahead -- with abounding support and connection.`,
+    description1: `While a coach teaches strategy and sends you out in the field, in the end, they only observe you 
+    from the sidelines. Guides, on the other hand, accompany you for the journey.`,
+    description2: `Rooted in Christian-Judeo, Buddhist and Nature-based practices, along with Intuitive Healing techniques, 
+    LifeGuidance can help you focus on the path ahead -- with abounding support and connection.`,
     bulletpoints: [
       "Holistic support rooted in diverse spiritual practices",
       "Focus on your path with intuitive healing techniques",

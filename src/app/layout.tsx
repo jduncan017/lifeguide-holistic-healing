@@ -12,14 +12,14 @@ if (!process.env.NEXT_PUBLIC_BASE_URL) {
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
-  title: "LifeGuide Holistic Healing",
+  title: "LifeGuide Holistic Healing | Energy Medicine & Intuitive Healing",
   keywords:
-    "brainspotting, holistic healing, holistic wellness, energy medicine, intuitive healing, integrative medicine, life coaching, transitions, grief, transformation, transitions",
+    "brainspotting, holistic healing, holistic wellness, energy medicine, intuitive healing, integrative medicine, life coaching, transitions, grief, transformation, Oklahoma holistic healing, nationwide services",
   authors: { name: "Joshua Duncan" },
   creator: "Joshua Duncan",
   publisher: "WebSavvy, LLC",
   description:
-    "LifeGuide Holistic Healing provides energy medicine, intuitive healing, brainspotting and life coaching. We help you access your deepest abilities, clear long-held limiting beliefs, and create the life you want. ",
+    "Energy medicine, intuitive healing, and life coaching to help you clear limiting beliefs and create the life you want.",
   alternates: {
     canonical: "/",
   },
@@ -31,7 +31,7 @@ export const metadata = {
     },
     title: "LifeGuide Holistic Healing",
     description:
-      "LifeGuide Holistic Healing provides energy medicine, intuitive healing, brainspotting and life coaching. We help you access your deepest abilities, clear long-held limiting beliefs, and create the life you want. ",
+      "Energy medicine, intuitive healing, and life coaching to help you clear limiting beliefs and create the life you want.",
     url: "/",
     locale: "en_US",
     type: "website",

@@ -42,7 +42,7 @@ export default function ServicesOverview() {
             {Object.keys(Services).map((key) => (
               <button
                 key={key}
-                className={`min-h-[45px] w-full rounded-md px-2 py-2 leading-5 shadow-sm transition-all duration-200 hover:scale-105 md:min-h-[60px] md:px-4 ${
+                className={`ServicesButtons min-h-[45px] w-full rounded-md px-2 py-2 leading-5 shadow-sm transition-all duration-200 hover:scale-105 md:min-h-[60px] md:px-4 ${
                   selectedButton === key
                     ? selectedButtonStyles[key]
                     : "border-2 border-black bg-none text-black transition-transform duration-200"
@@ -56,8 +56,11 @@ export default function ServicesOverview() {
           <h4 className="Title mt-2 font-sans text-gray-800">
             {Services[selectedButton].sectionTitle}
           </h4>
-          <p className="Description mt-2 text-slate-800 lg:mt-5">
-            {Services[selectedButton].description}
+          <p className="Description1 mt-2 text-slate-800 lg:mt-5">
+            {Services[selectedButton].description1}
+          </p>
+          <p className="Description2 mt-2 text-slate-800 lg:mt-5">
+            {Services[selectedButton].description2}
           </p>
           <div className="ListContainer hidden lg:block">
             <ItemList list={Services[selectedButton].bulletpoints} />
