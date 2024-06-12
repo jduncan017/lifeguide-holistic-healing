@@ -56,13 +56,13 @@ export default function ServicesOverview() {
           <h4 className="Title mt-2 font-sans text-gray-800">
             {Services[selectedButton].sectionTitle}
           </h4>
-          <p className="Description1 mt-2 text-slate-800 lg:mt-5">
+          <p className="Description1 mt-2 text-slate-800 lg:mt-3">
             {Services[selectedButton].description1}
           </p>
-          <p className="Description2 mt-2 text-slate-800 lg:mt-5">
+          <p className="Description2 mt-2 text-slate-800 lg:mt-2">
             {Services[selectedButton].description2}
           </p>
-          <div className="ListContainer hidden lg:block">
+          <div className="ListContainer mt-2 hidden lg:block">
             <ItemList list={Services[selectedButton].bulletpoints} />
           </div>
         </div>
