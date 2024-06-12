@@ -25,7 +25,7 @@ const NavBar = () => {
 
   const renderMenu = () => {
     return (
-      <div className="LinksContainer flex flex-col gap-6 px-16 pt-10 text-lg font-medium sm:flex-row sm:items-center sm:gap-4 sm:p-0 md:gap-6">
+      <div className="LinksContainer flex flex-col gap-6 px-16 pt-8 sm:flex-row sm:items-center sm:gap-3 sm:p-0 md:gap-6">
         {links.map((link, index) => (
           <button
             key={index}
@@ -34,7 +34,7 @@ const NavBar = () => {
               setMobileActive(false);
             }}
           >
-            <p className="AboutText uppercase text-primaryDark transition-all duration-300 hover:text-gray-700 hover:underline">
+            <p className="AboutText text-2xl uppercase text-primaryDark transition-all duration-300 hover:text-gray-700 hover:underline sm:text-base sm:text-white md:text-xl">
               {link.text}
             </p>
           </button>
@@ -58,7 +58,7 @@ const NavBar = () => {
   return (
     <nav className="NavContainer">
       <div className="NavBar fixed z-30 hidden w-full max-w-[1728px] overflow-hidden bg-blurWhite font-sans shadow-md backdrop-blur-lg backdrop-filter sm:absolute sm:block">
-        <div className="Container mx-auto flex h-[74px] items-center justify-between px-3 sm:px-5">
+        <div className="Container mx-auto flex h-[74px] items-center justify-between px-3 md:px-5">
           <Link
             href="/"
             className="transition-all duration-300 hover:scale-105 hover:contrast-125"
